@@ -65,7 +65,7 @@ var BasicLogin = React.createClass({
             })
             .then((response) => response.json()) //WORKING WITH THE RESPONSE
           .then((responseJson) => {
-            if (username == responseJson.username && password == responseJson.password ) {
+            if ( true //MAKE YOU VALIDATIONS HERE ) {
                 this.props.navigator.push({title: 'LoggedScene'});
             }else{
                 this.props.navigator.push({title: 'ErrorScene'});
